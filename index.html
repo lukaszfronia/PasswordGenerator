@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+        color: #495057;
+        font-family: "Roboto", sans-serif;
+      }
+      body {
+        background-color: #f8f9fa;
+      }
+      .box {
+        max-width: 50rem;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        box-shadow: 0 12px 12px rgba(0, 0, 0, 0.144);
+        margin: 20rem auto;
+        background-color: #edf2ff;
+        padding: 3.2rem 4.8rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+
+        align-items: center;
+      }
+      .box-title {
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+        margin-left: 2rem;
+      }
+      .box-choose {
+        font-size: 2rem;
+        margin-left: 2rem;
+        font-family: 500;
+      }
+      .input-field {
+        font-size: 2rem;
+        width: 5rem;
+        height: 3rem;
+        padding-left: 0.8rem;
+        border: 1px solid #868e96;
+        border-radius: 0.6rem;
+        background-color: inherit;
+      }
+      .output-field {
+        width: 70%;
+        height: 3rem;
+        border: 1px solid #868e96;
+        border-radius: 0.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+      }
+
+      .btn {
+        border: 1px solid #868e96;
+        box-shadow: 0 18px 12px rgba(0, 0, 0, 0.177);
+        padding: 1.8rem 3.2rem;
+        font-size: 2rem;
+        border-radius: 1rem;
+        background-color: #e5dbff;
+        transition: transform 0.2s;
+      }
+      .btn:active {
+        transform: translateY(5%);
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">
+      <h1 class="box-title">Generate Password</h1>
+      <p class="box-choose">
+        Choose password length:
+        <input class="input-field" type="number" max="20" min="6" />
+      </p>
+      <div class="output-field"></div>
+      <button class="btn btn-generate">Generate</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
